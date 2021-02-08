@@ -1,0 +1,35 @@
+﻿<Window x:Class="PassifloraProject.Products"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassifloraProject"
+        mc:Ignorable="d"
+        Title="Продукция" Height="720" Width="1366"
+        MaxHeight="720" MaxWidth="1366" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#F0F6FF" Closing="Window_Closing">
+    <Grid Name="Grid" ShowGridLines ="False" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+        </Grid.RowDefinitions>
+        <Image x:Name="Logo" HorizontalAlignment="Left" Height="40" Margin="30,18,0,0" VerticalAlignment="Top" Width="40" Source="Images/Icons/Logo.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,33,0,0" TextWrapping="Wrap" Text="Пассифлора" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="18" Grid.ColumnSpan="2" Width="102" Foreground="#FF1B5B42"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,58,0,0" TextWrapping="Wrap" Text="Цветочный салон премиум класса" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Grid.RowSpan="2" Grid.ColumnSpan="2" Width="111"/>
+        <Image x:Name="LoginRegisterIcon" Source="Images/Icons/login.png" Grid.Column="5" HorizontalAlignment="Left" Height="29" Margin="159,29,0,0" VerticalAlignment="Top" Width="29"/>
+        <TextBlock x:Name="LoginRegisterLink" MouseLeftButtonUp="LoginRegisterLink_MouseLeftButtonUp" Grid.Column="6" HorizontalAlignment="Left"  Margin="3,33,0,0" TextWrapping="Wrap" Text="Вход / Регистрация" VerticalAlignment="Top" Width="162" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="18" Foreground="#FF1B5B42"/>
+    </Grid>
+</Window>

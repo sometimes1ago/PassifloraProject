@@ -1,0 +1,31 @@
+﻿<Window x:Class="PassifloraProject.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassifloraProject"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="720" Width="1366"
+        MaxHeight="720" MaxWidth="1366" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#F0F6FF" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="195"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+            <RowDefinition Height="99" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Column="3"  HorizontalAlignment="Left" Height="23" Margin="0,28,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

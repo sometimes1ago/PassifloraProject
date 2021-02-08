@@ -24,5 +24,12 @@ namespace PassifloraProject
         {
             InitializeComponent();
         }
+
+        private void WatchProdsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Products prods = new Products();
+            Hide();
+            prods.Show();
+        }
     }
 }

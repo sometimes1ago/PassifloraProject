@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/startscreen/secondwindowplant.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/startscreen/startwindowplant.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/icons/login.png")]
 
 

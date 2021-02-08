@@ -26,7 +26,7 @@
             <RowDefinition Height="99" />
             <RowDefinition Height="99" />
         </Grid.RowDefinitions>
-        <Image Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="693" Grid.RowSpan="7" VerticalAlignment="Top" Width="463" Source="Images/StartScreen/StartWindowPlant.png" Margin="0,-2,0,0"/>
+        <Image Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="693" Grid.RowSpan="7" VerticalAlignment="Top" Width="463" Source="Images/StartScreen/StartWindowPlant.png" Margin="0,0,0,0"/>
         <Image Grid.Column="4" HorizontalAlignment="Left" Height="620" Grid.RowSpan="7" VerticalAlignment="Top" Width="423" Source="Images/StartScreen/SecondWindowPlant.png" Grid.ColumnSpan="3" Margin="162,71,0,0"/>
         <TextBlock x:Name="MainHeader" Grid.Column="1" HorizontalAlignment="Center" Margin="144,15,150,0" Grid.Row="1" TextWrapping="Wrap" 
                    Text="Добро пожаловать в цветочный салон Пассифлора" VerticalAlignment="Top" Grid.ColumnSpan="5" Grid.RowSpan="3" Width="681" 
@@ -35,7 +35,7 @@
                    TextWrapping="Wrap" Width="539" Height="100" FontSize="18" Grid.ColumnSpan="3" Grid.Column="2" Margin="23,87,23,11" Grid.Row="3" TextAlignment="Center" Grid.RowSpan="2"
                    FontFamily="/PassifloraProject;component/Fonts/#Montserrat" LineHeight="25" LineStackingStrategy="BlockLineHeight"/>
         <Button x:Name="WatchProdsButton" Content="Смотреть ассортимент" Grid.Column="2" HorizontalAlignment="Left" Margin="157,24,0,0" Grid.Row="5" VerticalAlignment="Top" Width="270"
-                Height="60" Grid.ColumnSpan="3" FontSize="16" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" FontWeight="Bold" Background="#FF1B5B42" Foreground="White"/>
+                Height="60" Grid.ColumnSpan="3" FontSize="16" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" FontWeight="Bold" Background="#FF1B5B42" Foreground="White" Click="WatchProdsButton_Click"/>
 
     </Grid>
 </Window>

@@ -1,0 +1,16 @@
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\bin\Debug\PassifloraProject.exe.config
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\bin\Debug\PassifloraProject.exe
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\bin\Debug\PassifloraProject.pdb
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\MainWindow.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\App.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject_MarkupCompile.cache
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject_MarkupCompile.lref
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\MainWindow.baml
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.g.resources
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.Properties.Resources.resources
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.csproj.GenerateResource.cache
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.exe
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.pdb
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.csprojAssemblyReference.cache
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\App.baml

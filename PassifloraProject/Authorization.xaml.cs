@@ -19,14 +19,23 @@ namespace PassifloraProject
     /// </summary>
     public partial class Authorization : Window
     {
-        public Authorization()
+        private Window formToOpen;
+        public Authorization(Products prod)
         {
             InitializeComponent();
+            formToOpen = prod;
+
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void BackLink_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Hide();
+            formToOpen.Show();
         }
     }
 }

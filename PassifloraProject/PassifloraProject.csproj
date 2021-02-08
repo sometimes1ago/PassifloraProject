@@ -149,5 +149,12 @@
   <ItemGroup>
     <Resource Include="Images\Icons\login.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Auth\AuthLeftSide.png" />
+    <Resource Include="Images\Auth\AuthRightSide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Auth\BackArrow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

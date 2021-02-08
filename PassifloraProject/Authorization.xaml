@@ -26,6 +26,17 @@
             <RowDefinition Height="99" />
             <RowDefinition Height="99" />
         </Grid.RowDefinitions>
-        <TextBox Grid.Column="3"  HorizontalAlignment="Left" Height="23" Margin="0,28,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Image HorizontalAlignment="Left" Height="536" Grid.RowSpan="6" VerticalAlignment="Top" Width="429" Source="Images/Auth/AuthLeftSide.png" Grid.ColumnSpan="3"/>
+        <Image Grid.ColumnSpan="3" Grid.Column="4" HorizontalAlignment="Left" Height="629" Margin="114,0,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="471" Source="Images/Auth/AuthRightSide.png"/>
+        <TextBlock x:Name="MainHeader" Grid.Column="2" HorizontalAlignment="Center" TextAlignment="Center" Margin="60,78,57,0" TextWrapping="Wrap" Text="Авторизация пользователей" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="68"
+                   LineHeight="82" LineStackingStrategy="BlockLineHeight" Grid.ColumnSpan="3" Grid.RowSpan="3" Width="468" Foreground="#FF1B5B42"/>
+        <TextBlock Grid.Column="3" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#FF1B5B42" HorizontalAlignment="Center" Margin="69,63,64,0" Grid.Row="2" TextWrapping="Wrap" Text="Логин" FontSize="22" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="2" FontSize="16" Padding="10,10,0,0" HorizontalAlignment="Left" Height="50" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="350px" Style="{DynamicResource RoundedTextBoxAuth}" Margin="116,9,0,0" Grid.ColumnSpan="3"/>
+        <TextBlock Grid.Column="3" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#FF1B5B42" HorizontalAlignment="Center" Margin="68,76,53,0" Grid.Row="3" TextWrapping="Wrap" Text="Пароль" FontSize="22" VerticalAlignment="Top" Grid.RowSpan="2" Width="74"/>
+        <TextBox Grid.Column="2" FontSize="16" Padding="10,10,0,0" HorizontalAlignment="Left" Height="50" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="350px" Style="{DynamicResource RoundedTextBoxAuth}" Margin="116,19,0,0" Grid.ColumnSpan="3"/>
+        <Button x:Name="AuthButton" FontWeight="Black" Content="Войти" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Grid.Column="2" HorizontalAlignment="Left" Margin="116,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="350" Height="50" Grid.ColumnSpan="3"  FontSize="16" Background="#FF1B5B42" Foreground="White"/>
+        <TextBlock x:Name="RegisterLink" Grid.Column="3" FontSize="14px" HorizontalAlignment="Left" Margin="22,75,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Нет учетной записи?" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Width="154"/>
+        <TextBlock x:Name="BackLink" Grid.Column="3" HorizontalAlignment="Left" Margin="97,8,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Назад" VerticalAlignment="Top" MouseLeftButtonUp="BackLink_MouseLeftButtonUp" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" FontSize="14"/>
+        <Image Grid.Column="3" HorizontalAlignment="Left" Margin="58,13,0,0" Grid.Row="6" VerticalAlignment="Top" Source="Images/Auth/BackArrow.png" Width="35"/>
     </Grid>
 </Window>

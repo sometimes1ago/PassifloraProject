@@ -32,7 +32,7 @@ namespace PassifloraProject
         //Добавить возможность вернуться обратно
         private void LoginRegisterLink_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Authorization auth = new Authorization();
+            Authorization auth = new Authorization(this);
             Hide();
             auth.Show();
         }

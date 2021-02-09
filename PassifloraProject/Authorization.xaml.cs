@@ -19,11 +19,15 @@ namespace PassifloraProject
     /// </summary>
     public partial class Authorization : Window
     {
-        private Window formToOpen;
+        private Window FormToOpen;
+        private bool IsCorrect = false;
+        private string UserRole;
+        private string GetLoginData = "select Пользователи.Логин, Пользователи.Пароль, Роли_Пользователей.Наименование from Пользователи inner join Роли_Пользователей on Пользователи.Роль = Роли_Пользователей.ID_Роли";
+
         public Authorization(Products prod)
         {
             InitializeComponent();
-            formToOpen = prod;
+            FormToOpen = prod;
 
         }
 
@@ -32,10 +36,61 @@ namespace PassifloraProject
             Environment.Exit(0);
         }
 
-        private void BackLink_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void BackControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Hide();
-            formToOpen.Show();
+            FormToOpen.Show();
+        }
+
+        private void RegisterLink_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Registration reg = new Registration(this);
+            Hide();
+            reg.Show();
+        }
+
+        private void AuthButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                DB.SearchValuesQuery(GetLoginData);
+
+                for (int i = 0; i < DB.ds.Tables[0].Rows.Count; i++)
+                {
+                    if (LoginInput.Text == DB.ds.Tables[0].Rows[i][0].ToString() && PasswordInput.Text == DB.ds.Tables[0].Rows[i][1].ToString())
+                    {
+                        UserRole = DB.ds.Tables[0].Rows[i][2].ToString();
+                        DB.SetAuthorizedUser(DB.ds.Tables[0].Rows[i][0].ToString());
+                        IsCorrect = true;
+
+                        switch (UserRole)
+                        {
+                            case "Пользователь":
+                                Hide();
+                                FormToOpen.Show();
+                                break;
+                            case "Кассир":
+                                Hide();
+                                Cashier cash = new Cashier(this);
+                                cash.Show();
+                                break;
+                            case "Администратор":
+                                Hide();
+                                Administrator admin = new Administrator(this);
+                                admin.Show();
+                                break;
+                        }
+                    } 
+                }
+                if (!IsCorrect)
+                {
+                    throw new Exception("Неправильный логин или пароль");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

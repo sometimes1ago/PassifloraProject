@@ -70,7 +70,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Administrator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Authorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cashier.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -78,6 +90,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Administrator.xaml.cs">
+      <DependentUpon>Administrator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -85,7 +100,13 @@
     <Compile Include="Authorization.xaml.cs">
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cashier.xaml.cs">
+      <DependentUpon>Cashier.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -150,11 +171,11 @@
     <Resource Include="Images\Icons\login.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Auth\AuthLeftSide.png" />
-    <Resource Include="Images\Auth\AuthRightSide.png" />
+    <Resource Include="Images\AuthRegister\AuthLeftSide.png" />
+    <Resource Include="Images\AuthRegister\AuthRightSide.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Auth\BackArrow.png" />
+    <Resource Include="Images\AuthRegister\BackArrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

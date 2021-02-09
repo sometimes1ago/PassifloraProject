@@ -22,6 +22,7 @@ namespace PassifloraProject
         public Products()
         {
             InitializeComponent();
+            CheckAuthorizedUser();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -32,9 +33,39 @@ namespace PassifloraProject
         //Добавить возможность вернуться обратно
         private void LoginRegisterLink_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Authorization auth = new Authorization(this);
-            Hide();
-            auth.Show();
+            if (LoginRegisterLink.Text == "Вход / Регистрация")
+            {
+                Authorization auth = new Authorization(this);
+                Hide();
+                auth.Show();
+            }
+        }
+
+
+        /// <summary>
+        /// Метод, проверяющий есть ли авторизованные пользователи
+        /// </summary>
+        private void CheckAuthorizedUser()
+        {
+            if (DB.AuthorizedUser == null)
+            {
+                LoginRegisterLink.Text = "Вход / Регистрация";
+                LoginRegisterIcon.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                DB.SearchValuesQuery("select Имя from Клиенты inner join Пользователи on Клиенты.Данные_для_входа = Пользователи.ID_Пользователя where Пользователи.Логин =" + "\'" + DB.AuthorizedUser + "\'");
+                LoginRegisterContainer.Width = 250;
+                LoginRegisterContainer.Margin = new Thickness(130, 29, 30, 0);
+                LoginRegisterLink.Width = 250;
+                LoginRegisterIcon.Visibility = Visibility.Hidden;
+                LoginRegisterLink.Text = "Здравствуйте, " + DB.ds.Tables[0].Rows[0][0].ToString();
+            }
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            CheckAuthorizedUser();
         }
     }
 }

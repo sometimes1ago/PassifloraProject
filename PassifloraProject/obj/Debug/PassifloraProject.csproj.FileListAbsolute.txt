@@ -34,3 +34,9 @@ Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Welcome.baml
 Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Products.baml
 Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Authorization.g.cs
 Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Authorization.baml
+Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Registration.g.cs
+Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Registration.baml
+Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Administrator.g.cs
+Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Cashier.g.cs
+Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Administrator.baml
+Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Cashier.baml

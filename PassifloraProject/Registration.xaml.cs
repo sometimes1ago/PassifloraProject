@@ -10,26 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PassifloraProject
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Registration.xaml
     /// </summary>
-    public partial class Welcome : Window
+    public partial class Registration : Window
     {
-        public Welcome()
+        private Window AuthWindow;
+
+        public Registration(Authorization authorization)
         {
             InitializeComponent();
+            AuthWindow = authorization;
         }
 
-        private void WatchProdsButton_Click(object sender, RoutedEventArgs e)
+        private void Registration1_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            Products prods = new Products();
+            Environment.Exit(0);
+        }
+
+        private void BackLink_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
             Hide();
-            prods.Show();
+            AuthWindow.Show(); 
         }
     }
 }

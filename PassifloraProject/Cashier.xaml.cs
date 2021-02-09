@@ -10,26 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PassifloraProject
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Cashier.xaml
     /// </summary>
-    public partial class Welcome : Window
+    public partial class Cashier : Window
     {
-        public Welcome()
+        private Window AuthWindow;
+
+        public Cashier(Authorization auth)
         {
             InitializeComponent();
-        }
-
-        private void WatchProdsButton_Click(object sender, RoutedEventArgs e)
-        {
-            Products prods = new Products();
-            Hide();
-            prods.Show();
+            AuthWindow = auth;
         }
     }
 }

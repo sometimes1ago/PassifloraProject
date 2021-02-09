@@ -26,17 +26,26 @@
             <RowDefinition Height="99" />
             <RowDefinition Height="99" />
         </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Left" Height="536" Grid.RowSpan="6" VerticalAlignment="Top" Width="429" Source="Images/Auth/AuthLeftSide.png" Grid.ColumnSpan="3"/>
-        <Image Grid.ColumnSpan="3" Grid.Column="4" HorizontalAlignment="Left" Height="629" Margin="114,0,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="471" Source="Images/Auth/AuthRightSide.png"/>
-        <TextBlock x:Name="MainHeader" Grid.Column="2" HorizontalAlignment="Center" TextAlignment="Center" Margin="60,78,57,0" TextWrapping="Wrap" Text="Авторизация пользователей" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="68"
+        <Image HorizontalAlignment="Left" Height="536" Grid.RowSpan="6" VerticalAlignment="Top" Width="429" Source="Images/AuthRegister/AuthLeftSide.png" Grid.ColumnSpan="3"/>
+        <Image Grid.ColumnSpan="3" Grid.Column="4" HorizontalAlignment="Left" Height="629" Margin="109,0,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="471" Source="Images/AuthRegister/AuthRightSide.png"/>
+        <StackPanel Grid.Column="2" HorizontalAlignment="Center" Height="546" Margin="0,-27,0,0" Grid.Row="1" VerticalAlignment="Top" Width="465" Grid.ColumnSpan="3" Grid.RowSpan="6">
+            <TextBlock x:Name="MainHeader" Grid.Column="2" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Авторизация пользователей" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="68"
                    LineHeight="82" LineStackingStrategy="BlockLineHeight" Grid.ColumnSpan="3" Grid.RowSpan="3" Width="468" Foreground="#FF1B5B42"/>
-        <TextBlock Grid.Column="3" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#FF1B5B42" HorizontalAlignment="Center" Margin="69,63,64,0" Grid.Row="2" TextWrapping="Wrap" Text="Логин" FontSize="22" VerticalAlignment="Top"/>
-        <TextBox Grid.Column="2" FontSize="16" Padding="10,10,0,0" HorizontalAlignment="Left" Height="50" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="350px" Style="{DynamicResource RoundedTextBoxAuth}" Margin="116,9,0,0" Grid.ColumnSpan="3"/>
-        <TextBlock Grid.Column="3" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#FF1B5B42" HorizontalAlignment="Center" Margin="68,76,53,0" Grid.Row="3" TextWrapping="Wrap" Text="Пароль" FontSize="22" VerticalAlignment="Top" Grid.RowSpan="2" Width="74"/>
-        <TextBox Grid.Column="2" FontSize="16" Padding="10,10,0,0" HorizontalAlignment="Left" Height="50" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="350px" Style="{DynamicResource RoundedTextBoxAuth}" Margin="116,19,0,0" Grid.ColumnSpan="3"/>
-        <Button x:Name="AuthButton" FontWeight="Black" Content="Войти" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Grid.Column="2" HorizontalAlignment="Left" Margin="116,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="350" Height="50" Grid.ColumnSpan="3"  FontSize="16" Background="#FF1B5B42" Foreground="White"/>
-        <TextBlock x:Name="RegisterLink" Grid.Column="3" FontSize="14px" HorizontalAlignment="Left" Margin="22,75,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Нет учетной записи?" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Width="154"/>
-        <TextBlock x:Name="BackLink" Grid.Column="3" HorizontalAlignment="Left" Margin="97,8,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Назад" VerticalAlignment="Top" MouseLeftButtonUp="BackLink_MouseLeftButtonUp" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" FontSize="14"/>
-        <Image Grid.Column="3" HorizontalAlignment="Left" Margin="58,13,0,0" Grid.Row="6" VerticalAlignment="Top" Source="Images/Auth/BackArrow.png" Width="35"/>
+            <StackPanel HorizontalAlignment="Center" Height="94" Margin="0,25,0,0" VerticalAlignment="Top" Width="350">
+                <TextBlock FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#FF1B5B42" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Логин" FontSize="22" VerticalAlignment="Top"/>
+                <TextBox x:Name="LoginInput" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="350px" Style="{DynamicResource RoundedTextBoxAuth}" Margin="0,10,0,0"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Height="100" Margin="0,15,0,0" VerticalAlignment="Top" Width="350">
+                <TextBlock  FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#FF1B5B42" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Пароль" FontSize="22" VerticalAlignment="Top" Width="74"/>
+                <TextBox x:Name="PasswordInput" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="350px" Style="{DynamicResource RoundedTextBoxAuth}" Margin="0,10,0,0"/>
+            </StackPanel>
+            <Button x:Name="AuthButton" FontWeight="Black" Click="AuthButton_Click" Content="Войти" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="350" Height="50" FontSize="16" Background="#FF1B5B42" Foreground="White"/>
+            <TextBlock x:Name="RegisterLink" MouseLeftButtonUp="RegisterLink_MouseLeftButtonUp" FontSize="14px" HorizontalAlignment="Center" Margin="0,15,0,0" TextWrapping="Wrap" Text="Нет учетной записи?" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Width="154"/>
+            <StackPanel x:Name="BackControl" MouseLeftButtonUp="BackControl_MouseLeftButtonUp" HorizontalAlignment="Center" Height="17" Margin="192,15,189,0" VerticalAlignment="Top" Width="84">
+                <TextBlock x:Name="BackLink" HorizontalAlignment="Left" Margin="40,0,-5,0" Grid.Row="6" TextWrapping="Wrap" Text="Назад" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" FontSize="14" Width="45"/>
+                <Image HorizontalAlignment="Left" Margin="0,-12,0,0" VerticalAlignment="Top" Source="Images/AuthRegister/BackArrow.png" Width="35"/>
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>

@@ -269,9 +269,10 @@
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
             <Setter Property="Background" Value="{StaticResource RadioButton.Static.Background}"/>
             <Setter Property="BorderBrush" Value="{StaticResource RadioButton.Static.Border}"/>
-            <Setter Property="Foreground" Value="#1B5B42"/>
+            <Setter Property="Foreground" Value="#000000"/>
             <Setter Property="FontFamily" Value="/PassifloraProject;component/Fonts/#Montserrat"/>
             <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -291,7 +292,10 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="HasContent" Value="true">
                                 <Setter Property="FocusVisualStyle" Value="{StaticResource OptionMarkFocusVisual}"/>
+                                <Setter Property="BorderBrush" Value="#000000"/>
+                                <Setter Property="FontWeight" Value="Medium"/>
                                 <Setter Property="Padding" Value="4,-1,0,0"/>
+                                <Setter Property="FontFamily" Value="/PassifloraProject;component/Fonts/#Montserrat"/>
                             </Trigger>
                             <Trigger Property="IsMouseOver" Value="true">
                                 <Setter Property="Background" TargetName="radioButtonBorder" Value="{StaticResource RadioButton.MouseOver.Background}"/>
@@ -310,6 +314,9 @@
                             </Trigger>
                             <Trigger Property="IsChecked" Value="true">
                                 <Setter Property="Opacity" TargetName="optionMark" Value="1"/>
+                                <Setter Property="Foreground" Value="#1B5B42"/>
+                                <Setter Property="BorderBrush" Value="#1B5B42"/>
+                                <Setter Property="BorderThickness" Value="2"/>
                             </Trigger>
                             <Trigger Property="IsChecked" Value="{x:Null}">
                                 <Setter Property="Opacity" TargetName="optionMark" Value="0.56"/>
@@ -318,6 +325,25 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+        </Style>
+        <Style x:Key="ProdButton" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="25"
+                            Background="{TemplateBinding Background}">
+
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="#1B5B42"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="FontFamily" Value="/PassifloraProject;component/Fonts/#Montserrat"/>
+            <Setter Property="FontWeight" Value="Black"/>
+            <Setter Property="FontSize" Value="16"/>
         </Style>
 
     </Application.Resources>

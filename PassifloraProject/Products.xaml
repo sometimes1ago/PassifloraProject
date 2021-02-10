@@ -26,7 +26,6 @@
             <RowDefinition Height="99" />
             <RowDefinition Height="99" />
         </Grid.RowDefinitions>
-
         <StackPanel x:Name="LogoContainer" HorizontalAlignment="Left" Height="89" Margin="30,18,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="156">
             <Image x:Name="Logo" HorizontalAlignment="Left" Height="40" Margin="0,0,5,-20" VerticalAlignment="Top" Width="40" Source="Images/Icons/Logo.png"/>
             <TextBlock HorizontalAlignment="Left" Margin="45,0,0,0" TextWrapping="Wrap" Text="Пассифлора" VerticalAlignment="Top" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="18" Width="102" Foreground="#FF1B5B42"/>
@@ -36,7 +35,38 @@
             <Image x:Name="LoginRegisterIcon" Source="Images/Icons/login.png" Grid.Column="5" HorizontalAlignment="Left" Height="29" Margin="0,0,0,0" VerticalAlignment="Top" Width="29"/>
             <TextBlock x:Name="LoginRegisterLink" MouseLeftButtonUp="LoginRegisterLink_MouseLeftButtonUp" Grid.Column="6" HorizontalAlignment="Left"  Margin="40,-25,0,0" TextWrapping="Wrap" Text="Вход / Регистрация" VerticalAlignment="Top" Width="162" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="18" Foreground="#FF1B5B42"/>
         </StackPanel>
-
-
+        <StackPanel x:Name="ProdsSectionHeader" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="79" Margin="30,13,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Top" Width="323">
+            <TextBlock Text="Наш ассортимент" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" FontSize="36" Foreground="#1B5B42" />
+            <TextBlock Text="Выберите подукцию для отображения" FontSize="16" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" />
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Margin="0,20,164,0" Height="69" VerticalAlignment="Top">
+            <StackPanel x:Name="RadioButtonsSortBy_Container" Margin="18,0,0,67">
+                <TextBlock Text="Сортировка по:" FontSize="22" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#1B5B42" />
+                <RadioButton Content="Названию" Style="{DynamicResource RadioButtons}" FontSize="16" FontWeight="SemiBold" Margin="196,-35,278,0" Grid.Column="3" Height="19" />
+                <RadioButton Content="Размеру" Style="{DynamicResource RadioButtons}" FontWeight="SemiBold" FontSize="16" Margin="345,-35,0,0" Height="19" HorizontalAlignment="Left" Width="96" />
+                <RadioButton Content="Стоимости" Style="{DynamicResource RadioButtons}" FontSize="16" FontWeight="SemiBold" Margin="480,-35,0,0" Height="19" HorizontalAlignment="Left" Width="118" />
+            </StackPanel>
+            <StackPanel x:Name="RadioButtonsOrderBy_Container" Margin="18,-100,0,0" Height="30">
+                <TextBlock Text="Порядок по:" FontSize="22" FontFamily="/PassifloraProject;component/Fonts/#El Messiri" Foreground="#1B5B42" Margin="0,0,136,0" />
+                <RadioButton Content="Возрастанию" Style="{DynamicResource RadioButtons}" FontSize="16" FontWeight="SemiBold" Margin="196,-35,265,0" Grid.Column="3" Height="19" />
+                <RadioButton Content="Убыванию" Style="{DynamicResource RadioButtons}" FontSize="16" FontWeight="SemiBold" Margin="345,-35,0,0" Height="19" HorizontalAlignment="Left" Width="113" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel x:Name="ProdNames" Grid.Column="0" Grid.Row="2" Margin="30,25,154,28" Grid.RowSpan="3" Grid.ColumnSpan="2">
+            <RadioButton Content="Букеты" Style="{DynamicResource RadioButtons}" HorizontalAlignment="Left" FontSize="16" Width="98" FontWeight="Black" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Margin="0,0,0,0" Height="19" />
+            <RadioButton Content="Цветы" Style="{DynamicResource RadioButtons}" HorizontalAlignment="Left" FontSize="16" Width="98" FontWeight="Black" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Margin="0,25,0,0" Height="19" />
+            <RadioButton Content="Горшки" Style="{DynamicResource RadioButtons}" HorizontalAlignment="Left" FontSize="16" Width="98" FontWeight="Black" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Margin="0,25,0,0" Height="19" />
+            <RadioButton Content="Садовые растения" Style="{DynamicResource RadioButtons}" HorizontalAlignment="Left" FontSize="16" Width="185" FontWeight="Black" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Margin="0,25,0,0" Height="19" />
+            <RadioButton Content="Комнатные растения" Style="{DynamicResource RadioButtons}" HorizontalAlignment="Left" FontSize="16" Width="206" FontWeight="Black" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Margin="0,25,0,0" Height="19" />
+            <RadioButton Content="Уход за растениями" Style="{DynamicResource RadioButtons}" HorizontalAlignment="Left" FontSize="16" Width="196" FontWeight="Black" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Margin="0,25,0,0" Height="19" />
+        </StackPanel>
+        <Button Content="Показать" HorizontalAlignment="Left" Margin="30,5,0,0" Grid.Row="5" VerticalAlignment="Top" Width="160" Height="45" FontSize="14" Style="{DynamicResource ProdButton}"/>
+        <StackPanel Grid.Column="0" Grid.Row="6" Margin="30,32,86,51" Grid.ColumnSpan="2">
+            <TextBlock Text="Листайте в сторону для прокрутки" FontFamily="/PassifloraProject;component/Fonts/#Montserrat" Margin="0,0,55,0"/>
+            <Image Height="10" HorizontalAlignment="Right" Width="50" Margin="0,-15,0,0" Source="Images/AuthRegister/ProdDirectionArrow.png"/>
+        </StackPanel>
+        <ScrollViewer Grid.Column="2" HorizontalAlignment="Left" Height="445" Margin="0,98,0,0" Grid.Row="1" Grid.RowSpan="6" VerticalAlignment="Top" Width="975" Grid.ColumnSpan="5">
+            
+        </ScrollViewer>
     </Grid>
 </Window>

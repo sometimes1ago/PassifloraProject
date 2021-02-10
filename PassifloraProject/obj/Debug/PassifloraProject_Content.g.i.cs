@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/auth/backarrow.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/authregister/proddirectionarrow.png")]
 
 

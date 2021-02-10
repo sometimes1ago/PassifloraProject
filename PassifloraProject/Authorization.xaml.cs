@@ -57,7 +57,7 @@ namespace PassifloraProject
 
                 for (int i = 0; i < DB.ds.Tables[0].Rows.Count; i++)
                 {
-                    if (LoginInput.Text == DB.ds.Tables[0].Rows[i][0].ToString() && PasswordInput.Text == DB.ds.Tables[0].Rows[i][1].ToString())
+                    if (LoginInput.Text == DB.ds.Tables[0].Rows[i][0].ToString() && PasswordInput.Password == DB.ds.Tables[0].Rows[i][1].ToString())
                     {
                         UserRole = DB.ds.Tables[0].Rows[i][2].ToString();
                         DB.SetAuthorizedUser(DB.ds.Tables[0].Rows[i][0].ToString());

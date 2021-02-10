@@ -1,11 +1,9 @@
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\bin\Debug\PassifloraProject.exe.config
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\bin\Debug\PassifloraProject.exe
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\bin\Debug\PassifloraProject.pdb
-C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\MainWindow.g.cs
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\App.g.cs
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject_MarkupCompile.cache
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject_MarkupCompile.lref
-C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\MainWindow.baml
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.g.resources
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.Properties.Resources.resources
 C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\PassifloraProject.csproj.GenerateResource.cache
@@ -40,3 +38,15 @@ Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Administrator.g.cs
 Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Cashier.g.cs
 Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Administrator.baml
 Z:\flowersshop\PassifloraProject\PassifloraProject\obj\Debug\Cashier.baml
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Administrator.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Authorization.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Cashier.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Registration.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Welcome.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Products.g.cs
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Administrator.baml
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Authorization.baml
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Cashier.baml
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Registration.baml
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Welcome.baml
+C:\Users\Александр\source\repos\PassifloraProject\PassifloraProject\obj\Debug\Products.baml

@@ -54,12 +54,12 @@ namespace PassifloraProject
             }
             else
             {
-                DB.SearchValuesQuery("select Имя from Клиенты inner join Пользователи on Клиенты.Данные_для_входа = Пользователи.ID_Пользователя where Пользователи.Логин =" + "\'" + DB.AuthorizedUser + "\'");
-                LoginRegisterContainer.Width = 250;
-                LoginRegisterContainer.Margin = new Thickness(130, 29, 30, 0);
-                LoginRegisterLink.Width = 250;
+                DB.SearchValuesQuery("select Имя, Фамилия from Клиенты inner join Пользователи on Клиенты.Данные_для_входа = Пользователи.ID_Пользователя where Пользователи.Логин =" + "\'" + DB.AuthorizedUser + "\'");
+                LoginRegisterContainer.Width = 350;
+                LoginRegisterContainer.Margin = new Thickness(50, 29, 30, 0);
+                LoginRegisterLink.Width = 350;
                 LoginRegisterIcon.Visibility = Visibility.Hidden;
-                LoginRegisterLink.Text = "Здравствуйте, " + DB.ds.Tables[0].Rows[0][0].ToString();
+                LoginRegisterLink.Text = "Здравствуйте, " + DB.ds.Tables[0].Rows[0][0].ToString() + " " + DB.ds.Tables[0].Rows[0][1].ToString();
             }
         }
 
